@@ -29,10 +29,13 @@ body {
     background: none;
     border-style: none;
   }
+  .titulo-principal {
+    color: purple;
+  }
   
   article {
     width: auto;
-    color: purple;
+    color: gray;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
