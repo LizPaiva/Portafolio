@@ -1,12 +1,12 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url(https://img.freepik.com/fotos-premium/hojas-helecho-arboles-pared-oscura-fondo-luz-neon-azul-forma-rectangular-bandera-vertical_545033-2026.jpg?w=740);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 30% 25%;
-    font-family: "IBM Plex Sans", sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  background-image: url('https://i.pinimg.com/736x/1e/e6/54/1ee654f04d664cf6d985c4fd8996a38e.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "IBM Plex Sans", sans-serif;
+}
   
   nav {
     width: auto;
@@ -30,7 +30,7 @@ body {
     border-style: none;
   }
   .titulo-principal {
-    color: purple;
+    color: white;
   }
   
   article {
@@ -42,7 +42,7 @@ body {
     align-items: center;
     padding-left: 45px;
     padding-right: 45px;
-    padding-top: 150px;
+    padding-top: 0px;
     margin-left: 70px;
   }
   article .impact-section {
@@ -78,13 +78,15 @@ body {
   }
   article img {
     width: 25vw;
+    height: auto;
     border-radius: 19px;
+    padding-bottom: 10px;
   }
  
   section {
     width: auto;
     height: auto;
-    background-color: #581845;
+    background-color: #c6b2d1;
     padding: 60px;
   }
   section h2 {
@@ -115,7 +117,7 @@ body {
     width: 14vw;
     height: 60vh;
     background-color: black;
-    color: purple;
+    color: gray;
     padding: 20px;
     border-radius: 8px;
     
@@ -231,7 +233,7 @@ body {
   
   .about-us .mision-section p {
     color: #fff;
-    background-color: rgba(255, 255, 255, 0.1); /* fondo translúcido */
+    background-color: rgba(255, 255, 255, 0.1); 
     padding: 15px;
     border-radius: 12px;
     text-align: center;
