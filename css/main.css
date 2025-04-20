@@ -35,7 +35,7 @@ body {
   
   article {
     width: auto;
-    color: gray;
+    color: rgb(216, 207, 207);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
