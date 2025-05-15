@@ -1,12 +1,70 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('https://i.pinimg.com/736x/1e/e6/54/1ee654f04d664cf6d985c4fd8996a38e.jpg');
+  background-color: black;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   font-family: "IBM Plex Sans", sans-serif;
 }
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+
+
+.navbar {
+  background-color: rgb(217, 159, 217);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+.back-to-top {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: purple;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: 'IBM Plex Sans', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: black;
+}
+
   
   nav {
     width: auto;
@@ -29,6 +87,7 @@ body {
     background: none;
     border-style: none;
   }
+
   .titulo-principal {
     color: white;
   }
@@ -68,7 +127,7 @@ body {
   article button {
     width: 12vw;
     padding: 20px;
-    background-color: black;
+    background-color: purple;
     border-radius: 35px;
     color: whitesmoke;
     font-size: 1em;
@@ -90,8 +149,26 @@ body {
     padding: 60px;
   }
   section h2 {
-    color: white;
+    color: black;
     font-size: 2em;
+  }
+  
+
+
+  .product-image.clickable {
+    position: relative;
+  }
+  
+  .product-image.clickable .image-label {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 4px 10px;
+    font-size: 14px;
+    border-radius: 5px;
   }
   section .Profesional, section .furniture {
     padding-bottom: 60px;
@@ -149,6 +226,7 @@ body {
     border-radius: 6px;
     transition: all 0.3s ease;
   }
+  
 
   section .Profesional .product-card .product-image img:hover, 
    section .furniture .product-card .product-image img:hover {
@@ -319,6 +397,7 @@ body {
   }
   
   footer {
+    text-align: center;
     background-color: black;
     width: 100%;
     height: auto;
@@ -326,6 +405,7 @@ body {
     color: white;
   }
   footer .social-media {
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -333,3 +413,28 @@ body {
     gap: 40px;
     padding-bottom: 40px;
   }/*# sourceMappingURL=main.css.map */
+
+
+@media (max-width: 1024px) {
+  article, section, .gallery .gallery-images {
+    flex-direction: column !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    margin-left: 0 !important;
+  }
+  article img, .gallery .gallery-images img {
+    width: 80vw !important;
+    height: auto !important;
+  }
+  section .Profesional .card-section, section .furniture .card-section {
+    flex-direction: column !important;
+    column-gap: 0 !important;
+    row-gap: 40px !important;
+  }
+  section .Profesional .product-card, section .furniture .product-card {
+    width: 80vw !important;
+    height: auto !important;
+    margin-bottom: 20px;
+  }
+}
+
